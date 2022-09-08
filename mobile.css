@@ -17,7 +17,7 @@ body {
   background: rgb(239, 233, 232);
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   box-shadow: 10px 0 60px brown;
 }
 .h3-headers {
@@ -192,6 +192,7 @@ form button {
     display: none;
   }
   .gender-age {
+    font-size: 12px;
     margin: 13px 0 13px 0;
   }
   form button {
@@ -203,12 +204,13 @@ form button {
     margin: 20px;
     cursor: pointer;
   }
-  .specific-skill {
+  /*.specific-skill {
     padding: 0 30px;
-  }
+  }*/
   .more-info {
     margin: 10px 0;
   }
+  /*
   .skills-check {
     display: initial;
   }
@@ -228,20 +230,48 @@ form button {
     margin-top: 10px;
 
     margin-bottom: 20px;
-  }
-
-  .reasons-break {
+  } */
+  .specific-skill {
     font-size: 12px;
-    width: 40%;
+    text-align: center;
+    display: grid;
+    padding: 0px;
+    width: 60%;
+    margin: 0 20% 0 20%;
+  }
+  .break-div {
     float: left;
-    padding: 10px 20px;
+    width: 40%;
+    margin: 1% 1% 1% 4%;
+    text-align: left;
+  }
+  .break-div2 {
+    text-align: left;
+
+    width: 40%;
+    margin: 1% 4% 1% 1%;
+    float: right;
+  }
+  .reasons-fr-vol {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+  .reasons {
+    text-align: center;
+    width: 100%;
+  }
+  .reasons-break {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 10%;
+    padding: 0 0 0 5%;
     text-align: left;
   }
   .reasons-break2 {
-    font-size: 12px;
+    width: 30%;
     float: right;
-    width: 40%;
-    padding: 10px 20px;
+    margin: 0 15% 0 0;
     text-align: left;
   }
   .inp1new {
