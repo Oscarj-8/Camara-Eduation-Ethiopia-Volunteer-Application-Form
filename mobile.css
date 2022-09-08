@@ -70,24 +70,26 @@ form button {
   position: relative;
 }
 .specific-skill {
-  text-align: left;
+  text-align: center;
   display: grid;
   padding: 0px;
   width: 60%;
-  margin: 0 0 0 35%;
-}
-.skills-check {
-  margin-right: 90px;
+  margin: 0 20% 0 20%;
 }
 .break-div {
   float: left;
-  width: 50%;
-  margin-left: -60px;
+  width: 40%;
+  margin: 1% 1% 1% 4%;
+  text-align: left;
 }
 .break-div2 {
+  text-align: left;
+
+  width: 40%;
+  margin: 1% 4% 1% 1%;
   float: right;
-  margin-right: 50px;
 }
+
 .reasons-break {
   text-align: left;
   margin-left: 100px;
