@@ -12,7 +12,7 @@ body {
 .container {
   width: 60%;
   text-align: center;
-  height: 95%;
+  height: 98%;
   margin: 2.5% auto;
   background: rgb(239, 233, 232);
   border-radius: 5px;
@@ -21,12 +21,16 @@ body {
   box-shadow: 10px 0 60px brown;
 }
 .h3-headers {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #777;
   /* background-color: blue;*/
   margin-bottom: 30px;
   padding: 20px 73px;
 }
 h4 {
+  font-size: 17px;
   color: #777;
   margin-bottom: 5px;
 }
@@ -54,13 +58,14 @@ form .inp1 {
 }
 form button {
   width: 110px;
+  font-style: italic;
+  color: whitesmoke;
   background: linear-gradient(to right, rgb(174, 215, 170), rgb(66, 197, 15));
   border: none;
   border-radius: 25px;
   height: 35px;
   cursor: pointer;
 }
-
 #personal-info {
   position: relative;
 }
