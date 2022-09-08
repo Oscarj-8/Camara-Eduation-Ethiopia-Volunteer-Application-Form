@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 body {
   width: 100%;
@@ -48,7 +47,10 @@ form .inp1 {
   background: transparent;
 }
 .btn-box {
-  margin: 30px auto;
+  display: flex;
+  margin: 30px 100px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 form button {
   width: 110px;
@@ -66,9 +68,34 @@ form button {
   text-align: left;
   display: grid;
   padding: 10px;
-  width: 33.33%;
-  margin: 0 33.33% 0 33.33%;
+  width: 50%;
+  margin: 0 0% 0 35%;
 }
+.skills-check {
+  margin-right: 90px;
+}
+.break-div {
+  float: left;
+  width: 50%;
+  margin-left: -60px;
+}
+.break-div2 {
+  float: right;
+  margin-right: 50px;
+}
+.reasons-break {
+  text-align: left;
+  margin-left: 100px;
+  float: left;
+  width: 40%;
+}
+.reasons-break2 {
+  text-align: left;
+  margin-right: 75px;
+  float: right;
+  width: 30%;
+}
+
 .card {
   display: none;
 }
@@ -91,7 +118,9 @@ form button {
   color: #333;
   position: relative;
 }
-
+.file-upload {
+  margin: 20px;
+}
 #progress {
   position: absolute;
   height: 100%;
@@ -168,7 +197,6 @@ form button {
     cursor: pointer;
   }
   .specific-skill {
-    margin: 10px 10px;
     padding: 0 30px;
   }
   .more-info {
@@ -176,10 +204,6 @@ form button {
   }
   .skills-check {
     display: initial;
-    width: 150%;
-  }
-  .spec {
-    margin-left: 125px;
   }
   .break-div {
     font-size: 12px;
@@ -187,7 +211,6 @@ form button {
     float: left;
     padding: 5%;
     text-align: left;
-    margin-bottom: 20px;
   }
   .break-div2 {
     font-size: 12px;
@@ -196,7 +219,7 @@ form button {
     padding: 1%;
     text-align: left;
     margin-top: 10px;
-    margin-left: 20px;
+
     margin-bottom: 20px;
   }
   .reasons-break {
@@ -210,7 +233,7 @@ form button {
     font-size: 12px;
     float: right;
     width: 40%;
-    padding: 10px 0px;
+    padding: 10px 20px;
     text-align: left;
   }
   .inp1new {
