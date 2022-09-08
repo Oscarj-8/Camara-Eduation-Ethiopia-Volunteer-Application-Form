@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Volunteer Application Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form data-multi-step class="form" action="#" method="post">
+        <div data-step class="card" id="personal-info">
+          <div class="h3-headers">
+            <h3>Personal information</h3>
+          </div>
+          <div class="personal-info-inp">
+            <input
+              class="inp1"
+              name="fullName"
+              type="text"
+              placeholder="Full name"
+              required
+            />
+            <input
+              class="inp1"
+              name="city"
+              type="text"
+              placeholder="City"
+              required
+            />
+            <input
+              class="inp1"
+              name="subCity"
+              type="text"
+              placeholder="Subcity"
+            />
+            <input
+              class="inp1"
+              name="woreda"
+              type="text"
+              placeholder="Woreda"
+            />
+            <input
+              class="inp1"
+              name="phone"
+              type="text"
+              placeholder="Phone"
+              required
+            />
+            <input
+              class="inp1"
+              name="email"
+              type="text"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="inp1"
+              type="text"
+              name="educatonalInstitution"
+              placeholder="Educatonal Institution"
+              required
+            />
+            <input
+              class="inp1"
+              name="department"
+              type="text"
+              placeholder="Department"
+              required
+            />
+            <input
+              class="inp1"
+              name="level_year"
+              type="text"
+              placeholder="Level & Year"
+              required
+            />
+            <br />
+            <br />
+          </div>
+          <div class="gender-age">
+            <label for="gender">Gender</label>
+
+            <select name="gender" id="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
+            <label for="age">&emsp;Age</label>
+
+            <select name="age" id="age">
+              <option value="17-20">17-20</option>
+              <option value="21-30">21-30</option>
+              <option value="31+">31+</option>
+            </select>
+          </div>
+          <div class="btn-box">
+            <button type="button" data-next id="Next1">Next</button>
+          </div>
+        </div>
+
+        <div data-step class="card" id="emergency-cont">
+          <div class="h3-headers">
+            <h3>Emergency Contact</h3>
+          </div>
+          <div class="emergency-cont-inp">
+            <input
+              class="inp1"
+              name="emer-Fname"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              class="inp1"
+              name="r_ship"
+              type="text"
+              placeholder="Relationship"
+              required
+            />
+            <input
+              class="inp1"
+              name="Emer-City"
+              type="text"
+              placeholder="City"
+              required
+            />
+            <input
+              class="inp1"
+              name="emer-Subcity"
+              type="text"
+              placeholder="Subcity"
+            />
+            <input
+              class="inp1"
+              name="emer-Woreda"
+              type="text"
+              placeholder="Woreda"
+            />
+            <input
+              class="inp1"
+              name="emerPhone"
+              type="text"
+              placeholder="phone no"
+              required
+            />
+            <input
+              class="inp1"
+              name="emer-Email"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="btn-box">
+            <button type="button" data-back id="Back1">Back</button>
+            <button type="button" data-next id="Next2">Next</button>
+          </div>
+        </div>
+
+        <div data-step class="card" id="refernce-person">
+          <div class="h3-headers">
+            <h3>Reference Person</h3>
+          </div>
+          <div class="h4-text">
+            <h4>
+              Please list reference, past or present employer, teacher,
+              volunteer supervisor... <br />
+              We CANNOT accept family members or personal friends as references.
+            </h4>
+          </div>
+          <div class="refernce-person-inp">
+            <input
+              class="inp1"
+              name="ref-FName"
+              type="text"
+              placeholder="full name"
+              required
+            />
+            <input
+              class="inp1"
+              name="ref-R_ship"
+              type="text"
+              placeholder="relationship"
+              required
+            />
+            <input
+              class="inp1"
+              name="ref-phone"
+              type="text"
+              placeholder="phone no"
+              required
+            />
+            <br />
+            <br />
+          </div>
+          <div class="specific-skill">
+            <div class="h3-headers">
+              <h3 class="spec">Specific Skills</h3>
+            </div>
+            <div class="skills-check">
+              <div class="break-div">
+                <label for="select1">Hardware and Maintenance</label>
+                <br />
+                <select name="Hardware-maintenance" id="select1">
+                  <option value="No">No</option>
+                  <option value="Good">Good</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Excellent">Excellent</option>
+                </select>
+                <br />
+
+                <label for="select2">Ubuntu Operating Systems</label>
+                <br />
+                <select name="ubuntu-OS" id="select2">
+                  <option value="No">No</option>
+                  <option value="Good">Good</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Excellent">Excellent</option>
+                </select>
+                <br />
+                <label for="select3">Networking</label>
+                <br />
+                <select name="Networking" id="select3">
+                  <option value="No">No</option>
+                  <option value="Good">Good</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Excellent">Excellent</option>
+                </select>
+              </div>
+              <div class="break-div2">
+                <label for="select4">Lab set up / Vetting</label>
+                <br />
+                <select name="lab-set" id="select4">
+                  <option value="No">No</option>
+                  <option value="Good">Good</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Excellent">Excellent</option>
+                </select>
+                <br />
+                <label for="select5">Database</label>
+                <br />
+                <select name="Database" id="select5">
+                  <option value="No">No</option>
+                  <option value="Good">Good</option>
+                  <option value="Very Good">Very Good</option>
+                  <option value="Excellent">Excellent</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button type="button" data-back id="Back2">Back</button>
+            <button type="button" data-next id="Next3">Next</button>
+          </div>
+        </div>
+
+        <div data-step class="card reasons-fr-vol">
+          <div class="h3-headers">
+            <h3>Reasons For Volunteering</h3>
+          </div>
+          <div class="reasons">
+            <div class="reasons-break">
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="for-ac-cr"
+                value="For academic credit"
+              />
+              <label for="for-ac-cr"> For academic credit:</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="learn-new-sk"
+                value="To learn new skills"
+              />
+              <label for="learn-new-sk">To learn new skills:</label>
+
+              <br />
+
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="for-so-int"
+                value="For social interaction"
+              />
+              <label for="for-so-int">For social interaction:</label>
+            </div>
+            <div class="reasons-break2">
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="to-gain-emp-sk"
+                value="To gain employment skills"
+              />
+              <label for="to-gain-emp-sk">To gain employment skills:</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="share-sk"
+                value="To share my skills"
+              />
+              <label for="share-sk">To share my skills:</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="reasons-for volunteering"
+                id="to-stay-act"
+                value="To say active"
+              />
+              <label for="to-stay-act">To stay active:</label>
+            </div>
+          </div>
+          <div class="if-other">
+            <input
+              id="oth"
+              class="inp1 inp1new"
+              name="another reasons"
+              type="text"
+              placeholder="If other, Please Explain..."
+            />
+          </div>
+          <div class="more-info">
+            <div class="h3-headers">
+              <h3>More Information</h3>
+            </div>
+            <div class="lbls">
+              <label>Do You Have Physical Limitations?</label>
+              <label for="phy-lim"> No</label>
+              <input type="checkbox" name="physical-lim" id="phy-lim" />
+              <input
+                class="inp1 inp1new"
+                name="physical-lim explanation"
+                type="text"
+                placeholder="If yes (Please Explain)..."
+              />
+            </div>
+            <label
+              >Have you ever been volunteer to any othe organization?</label
+            >
+            <label for="any-other-org"> No</label>
+            <input type="checkbox" name="any-other-org" id="any-other-org" />
+            <input
+              class="inp1 inp1new"
+              name="spec-org"
+              type="text"
+              placeholder="If yes (Please Specify)..."
+            />
+          </div>
+          <div class="btn-box">
+            <button type="button" data-back id="Back3">Back</button>
+          </div>
+          <div class="file-upload">
+            <span class="upload">Upload Your Photo:</span>
+            <div class="file-input">
+              <input
+                type="file"
+                name="img_url"
+                class="form-control"
+                id="inputGroupFile02"
+              />
+            </div>
+          </div>
+          <div id="sub-btn" class="btn-bon">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step 1</small></div>
+        <div class="step-col"><small>Step 2</small></div>
+        <div class="step-col"><small>Step 3</small></div>
+        <div class="step-col"><small>Step 4</small></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="func.js"></script>
+  </body>
+</html>
