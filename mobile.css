@@ -68,10 +68,15 @@ form button {
   height: 35px;
   cursor: pointer;
 }
+.gender-age {
+  font-size: 18px;
+  color: rgb(92, 90, 90);
+}
 #personal-info {
   position: relative;
 }
 .specific-skill {
+  font-size: 18px;
   text-align: center;
   display: grid;
   padding: 0px;
@@ -147,8 +152,79 @@ form button {
   top: 0;
   border-left: 20px solid rgb(66, 197, 15);
 }
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    width: 75%;
+  }
+  .card {
+    display: grid;
+  }
+  .h3-headers {
+    font-size: 18px;
+    padding: 5px 5px;
+    color: #777;
+    margin: 2px;
+  }
+  h3 {
+    margin: 15px 0 5px 0;
+  }
+  h4 {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 0 30px;
+  }
+  .step-row {
+    display: none;
+  }
+  .btn-box {
+    display: none;
+  }
+  .gender-age {
+    font-size: 16px;
+  }
+  form button {
+    width: 90px;
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
 
-@media screen and (max-width: 600px) {
+  .more-info {
+    margin: 10px 0;
+  }
+  .specific-skill {
+    font-size: 16px;
+  }
+  .reasons-fr-vol {
+    font-size: 16px;
+  }
+  .reasons-break {
+    margin-top: 10px;
+    float: left;
+    width: 30%;
+  }
+  .reasons-break2 {
+    margin-top: 10px;
+    width: 29%;
+  }
+  .lbls {
+    width: 95%;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .inp1new {
+    font-size: 16px;
+  }
+  .file-upload {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
   .container {
     width: 90%;
     height: 100%;
