@@ -4,9 +4,11 @@
   font-family: sans-serif;
 }
 body {
+  background-image: url("images/mona-eendra-fIoQ-aRycys-unsplash.jpg");
+  background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
-  background-color: peachpuff;
+
   overflow: hidden;
 }
 .container {
@@ -18,7 +20,7 @@ body {
   border-radius: 5px;
   position: relative;
   overflow-x: hidden;
-  box-shadow: 10px 0 60px brown;
+  box-shadow: 10px 0 60px 0 rgb(221, 191, 191);
 }
 .h3-headers {
   font-size: 20px;
@@ -150,14 +152,9 @@ form button {
   .container {
     width: 90%;
     height: 100%;
-    background-color: pink;
-    text-align: center;
-    margin-left: 5%;
     border-radius: 5px;
     background-color: rgb(239, 233, 232);
-    position: relative;
     overflow: scroll;
-    box-shadow: 10px 0 60px brown;
   }
   .card {
     display: grid;
