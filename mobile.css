@@ -89,7 +89,6 @@ input[type="checkbox"] {
   position: relative;
 }
 .specific-skill {
-  font-size: 18px;
   text-align: center;
   display: grid;
   padding: 0px;
@@ -97,14 +96,15 @@ input[type="checkbox"] {
   margin: 0 20% 0 20%;
 }
 .break-div {
+  font-size: 16px;
   float: left;
-  width: 40%;
+  width: 50%;
   margin: 1% 1% 1% 4%;
   text-align: left;
 }
 .break-div2 {
   text-align: left;
-
+  font-size: 16px;
   width: 40%;
   margin: 1% 4% 1% 1%;
   float: right;
@@ -151,7 +151,7 @@ input[type="checkbox"] {
 #progress {
   position: absolute;
   height: 100%;
-  width: 225px;
+  width: 25%;
   background: linear-gradient(to right, rgb(158, 208, 154), rgb(66, 197, 15));
 }
 #progress::after {
@@ -165,7 +165,13 @@ input[type="checkbox"] {
   top: 0;
   border-left: 20px solid rgb(66, 197, 15);
 }
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .container {
     width: 75%;
   }
@@ -236,7 +242,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   .container {
     width: 90%;
     height: 100%;
@@ -289,33 +295,11 @@ input[type="checkbox"] {
     margin: 20px;
     cursor: pointer;
   }
-  /*.specific-skill {
-    padding: 0 30px;
-  }*/
+
   .more-info {
     margin: 10px 0;
   }
-  /*
-  .skills-check {
-    display: initial;
-  }
-  .break-div {
-    font-size: 12px;
-    width: 50%;
-    float: left;
-    padding: 5%;
-    text-align: left;
-  }
-  .break-div2 {
-    font-size: 12px;
-    width: 40%;
-    float: right;
-    padding: 1%;
-    text-align: left;
-    margin-top: 10px;
 
-    margin-bottom: 20px;
-  } */
   .specific-skill {
     font-size: 12px;
     text-align: center;

@@ -39,24 +39,24 @@ var Back2 = document.getElementById("Back2");
 var Back3 = document.getElementById("Back3");
 
 Next1.onclick = function () {
-  progress.style.width = "450px";
+  progress.style.width = "50%";
 };
 Back1.onclick = function () {
-  progress.style.width = "225px";
+  progress.style.width = "25%";
 };
 
 Next2.onclick = function () {
-  progress.style.width = "675px";
+  progress.style.width = "75%";
 };
 
 Back2.onclick = function () {
-  progress.style.width = "450px";
+  progress.style.width = "50%";
 };
 
 Next3.onclick = function () {
-  progress.style.width = "1000px";
+  progress.style.width = "100%";
 };
 
 Back3.onclick = function () {
-  progress.style.width = "675px";
+  progress.style.width = "75%";
 };
