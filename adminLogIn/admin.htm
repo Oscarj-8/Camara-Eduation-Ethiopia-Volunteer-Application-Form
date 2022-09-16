@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/da8e7b61e5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin side</title>
+  </head>
+  <body>
+    <div class="both">
+      <div class="container">
+        <form action="" class="log-in">
+          <div class="header"><h2>Log In form</h2></div>
+
+          <div class="inputs">
+            <i class="fa-solid fa-user-tie" id="icons"></i>
+            <input type="text" name="name" id="inp1" placeholder="Enter name" />
+            <br />
+            <i class="fas fa-lock" id="icons"></i>
+            <input
+              type="password"
+              name="password"
+              id="inp2"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="show-p">
+            <input type="checkbox" onclick="myFunction()" />Show Password <br />
+          </div>
+          <div class="rem-me">
+            <label for="rem">Remember me</label>
+            <input type="checkbox" id="rem" />
+          </div>
+          <input type="button" name="log-in" class="log-btn" value="log-in" />
+          <div class="link"><a href="#">Forgot password</a></div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("inp2");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
