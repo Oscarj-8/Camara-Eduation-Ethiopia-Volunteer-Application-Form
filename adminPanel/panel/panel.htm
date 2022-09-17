@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="panel.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <h2>Admin panel</h2>
+        </div>
+        <div class="search">
+          <input type="text" id="search" placeholder="search here" />
+          <label for="search"> <i class="fas fa-search"></i></label>
+        </div>
+        <div class="user">
+          <img src="ima/download.jpg" alt="" />
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="number">17</div>
+              <div class="card-name">Currnet Volunteers</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">22</div>
+              <div class="card-name">Last Term Arrivals</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">217</div>
+              <div class="card-name">Total Volunteers</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart">
+            <h2>Last term arrivals</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+          <div class="chart" id="doughnut-chart">
+            <h2>Students</h2>
+            <canvas id="doughnut"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="barchart.js"></script>
+    <script src="piechart.js "></script>
+  </body>
+</html>
