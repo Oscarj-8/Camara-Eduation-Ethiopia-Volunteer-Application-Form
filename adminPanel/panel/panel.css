@@ -95,10 +95,10 @@
 }
 .cards {
   width: 100%;
-  padding: 15px 20px;
+  padding: 30px 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 55px;
 }
 
 .cards .card {
@@ -147,5 +147,25 @@
   margin-bottom: 5px;
   font-size: 20px;
   color: #888;
-  text-align: centere;
+  text-align: center;
+}
+
+/* responsive starts here */
+
+@media (max-width: 1115px) {
+  .sidebar {
+    width: 60px;
+  }
+  .main {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width: 880px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .charts {
+    grid-template-columns: 1fr;
+  }
 }

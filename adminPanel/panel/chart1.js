@@ -1,4 +1,4 @@
-let myChart = document.getElementById("lineChart").getContext("2d");
+let myChart = document.getElementById("bar").getContext("2d");
 
 let masspop = new Chart(myChart, {
   type: "bar",
@@ -10,7 +10,7 @@ let masspop = new Chart(myChart, {
         data: [45555, 85665, 34233, 45663],
         backgroundColor: ["#748", "#354", "#948", "#029"],
         broderWidth: 1,
-        borderColor: "black",
+        borderColor: "#474783",
         hoverBorderColor: "black",
         hoverBorderWidth: 3,
       },
