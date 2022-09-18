@@ -31,11 +31,11 @@
           <label for="search"> <i class="fas fa-search"></i></label>
         </div>
         <div class="user">
-          <img src="ima/download.jpg" alt="" />
+          <i class="fa-solid fa-user-tie fa-2xl"></i>
         </div>
       </div>
       <div class="sidebar">
-        <ul>
+        <ul class="nav-links">
           <li>
             <a href="#">
               <i class="fa-solid fa-gauge"></i>
@@ -43,13 +43,12 @@
             </a>
           </li>
           <li>
-            <div class="icon-link">
-              <a href="#">
-                <i class="fa-solid fa-users"></i>
-                <div><span>Volunteers</span></div>
-                <i class="fa-solid fa-circle-chevron-down"></i>
-              </a>
-            </div>
+            <a href="#">
+              <i class="fa-solid fa-users"></i>
+              <div><span>Volunteers</span></div>
+              <i class="fa-solid fa-circle-chevron-down arrow"></i>
+            </a>
+
             <ul class="sub-menu">
               <li>
                 <a href="#">Currnet Volunteers</a>
@@ -133,6 +132,18 @@
         </div>
       </div>
     </div>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+
+      console.log(arrow);
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement;
+          console.log(arrowParent);
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js "></script>
     <script src="chart1.js"></script>
     <script src="chart2.js"></script>

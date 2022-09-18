@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+.fa-user-tie {
+  position: inherit;
+  top: 15px;
+  color: #475783;
+}
 .topbar {
   position: fixed;
   background: #fff;
@@ -64,10 +69,10 @@
   overflow: hidden;
 }
 .sidebar li:hover {
-  background-color: #fff;
+  background-color: #2e3b5f;
 }
 .sidebar a:hover {
-  color: #475783;
+  color: white;
 }
 .sidebar ul {
   margin-top: 20px;
@@ -89,16 +94,35 @@
   font-size: 24px;
   text-align: center;
 }
+.nav-links li i {
+  line-height: 30px;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow {
+  transform: rotate(-180deg);
+}
 .sidebar .sub-menu {
-  background-color: #888;
+  background-color: #2e3b5f;
   padding-left: 30px;
   margin-top: 10px;
+  display: none;
+}
+.sidebar li.showMenu .sub-menu {
+  display: block;
+}
+.sidebar .sub-menu li {
+  height: 100px;
+  margin-top: -70px;
 }
 .sidebar .sub-menu li a {
+  padding: 70px 0px 10px 0px;
   margin: -25px 20px;
-
   font-size: 13px;
 }
+.sidebar .sub-menu li a:hover {
+  border-bottom: 1px solid #475783;
+}
+
 /* main  section starts here */
 
 .main {
