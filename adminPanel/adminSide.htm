@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/viewpopupmobile.css" />
+    <link rel="stylesheet" href="css/adminSide.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="containe">
+      <div class="side-ba">
+        <div class="adminSideName">
+          <h1>Camara Admin Panel</h1>
+        </div>
+        <div class="ul-list">
+          <ul>
+            <li class="lis">
+              <a>
+                <img style="width: 40px" src="images/dashboard1.png" alt="" />
+              </a>
+              &emsp;Dashboad
+            </li>
+            <li class="lis">
+              <a>
+                <img src="images/hand-up.png" style="width: 35px" alt="" />
+              </a>
+              &emsp;Volunteers
+            </li>
+            <li class="lis">
+              <img
+                src="images/exit.png"
+                style="width: 35px; height: 35px"
+                alt=""
+              />
+              &emsp;Log Out
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mai">
+        <div class="heade">
+          <div class="nav">
+            <div class="searc">
+              <input type="text" placeholder="Search..." />
+              <button type="submit">
+                <img src="images/search.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cardss">
+          <div class="car">
+            <h1>14</h1>
+            <h3>New Students</h3>
+            <div class="icon-cas">
+              <img src="images/reading.png" style="width: 70px" alt="" />
+            </div>
+          </div>
+          <div class="car">
+            <h1>14</h1>
+            <h3>Last Term Arrivals</h3>
+            <div class="icon-cas">
+              <img src="images/learning.png" style="width: 70px" alt="" />
+            </div>
+          </div>
+          <div class="car">
+            <h1>14</h1>
+            <h3>Total Students</h3>
+            <div class="icon-cas">
+              <img src="images/students.png" style="width: 70px" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="mai2">
+          <div class="tabl">
+            <div class="table-titl">
+              <h2 style="font-size: 30px">Recent Applicants</h2>
+              <button type="button" class="btn refresh">Refresh</button>
+            </div>
+
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last-Name</th>
+                <th>Age</th>
+                <th>Option</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Hector</td>
+                <td>Herrera</td>
+                <td>29</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-popup-start">
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" style="color: white">
+                New Arrival Volunteer Full Information
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="all-info">
+              <div class="cont1">
+                <div class="personal-info">
+                  <div class="headers">
+                    <h2>Personal Information</h2>
+                  </div>
+                  <div class="pic">Photo Here</div>
+                  <span>Full Name: Ander Herrera</span>
+                  <span>City: Bilbao</span>
+                  <span>Sub City: yeah whatever</span>
+                  <span>Woreda: please</span>
+                  <span>Phone: +312-23-456-32</span>
+                  <span>Email: naderher@gmail.com</span>
+                  <span>Education Institution: Bilboa</span>
+                  <span>Department: Midflielder</span>
+                  <span>Level & Year: haha</span>
+                  <span>Age: 31</span>
+                  <span>Gender: male</span>
+                </div>
+                <div class="emergency-cont">
+                  <div class="headers">
+                    <h2>Emergency Contact</h2>
+                  </div>
+
+                  <span>Name Goes Here</span>
+                  <span>Relationship Goes Here</span>
+                  <span>City Goes Here</span>
+                  <span>Sub City Goes Here</span>
+                  <span>Woreda Goes Here</span>
+                  <span>Phone Goes Here</span>
+                  <span>Email Goes Here</span>
+                </div>
+                <div class="reference-person">
+                  <div class="headers">
+                    <h2>Reference</h2>
+                  </div>
+
+                  <span>Name Goes Here</span>
+                  <span>Relationship Goes Here</span>
+                  <span>Phone number Goes Here</span>
+                </div>
+              </div>
+
+              <div class="specSkill-Reasons-for-vol">
+                <div class="spec-skill">
+                  <div class="headers">
+                    <h2>Specific Skills</h2>
+                  </div>
+
+                  <span>Hardware and Maintenance</span>
+                  <span>Ubuntu Operating Systems</span>
+                  <span>Networking</span>
+                  <span>Lab set up / Vetting</span>
+                  <span>Database</span>
+                </div>
+                <div class="reasons-for-vol">
+                  <div class="headers">
+                    <h2>Reasons For Volunteering</h2>
+                  </div>
+
+                  <span> For academic credit </span>
+                  <span>To learn new skills</span>
+                  <span>For social interaction</span>
+                  <span>To gain employment skills</span>
+                  <span>To share my skills</span>
+                  <span>To stay active</span>
+                </div>
+              </div>
+              <div class="buttons">
+                <button class="bttn">Accept</button>
+                <button class="bttn">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
