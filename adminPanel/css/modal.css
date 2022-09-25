@@ -1,6 +1,7 @@
 .modal-dialog {
   align-items: center;
 }
+
 .modal-content {
   position: relative;
   width: 100%;
@@ -11,14 +12,17 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+
 .modal-content::-webkit-scrollbar {
   display: none;
 }
+
 .modal-header {
   background-color: #96376a;
   padding: 20px;
   margin-bottom: 10px;
 }
+
 .btn-close {
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
@@ -27,6 +31,7 @@
 .content1 {
   padding: 20px;
 }
+
 @media screen and (max-width: 500px) {
   .modal-content {
     width: 100%;

@@ -3,56 +3,67 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 h1 {
   color: #f1f1f1;
   font-size: 20px;
   font-weight: 600;
 }
+
 .num {
   color: black;
   font-size: 32px;
 }
+
 h3 {
   color: rgb(46, 41, 41);
   font-size: 25px;
   font-weight: 200;
 }
+
 .adminSideName {
   width: 100%;
   margin: 25px 5px 5px 15px;
 }
+
 .ul-list {
   width: 100%;
-  margin: 40px auto auto 10px !important;
+  margin: 40px auto auto 10px;
 }
+
 .lis {
   list-style: none;
 
   font-size: 15px;
   padding: 15px 10px;
-  color: rgb(245, 235, 235) !important;
+  color: rgb(245, 235, 235);
   display: flex;
   align-items: center;
 }
+
 li:hover {
   border: 1px solid black;
-  color: #000000 !important;
+  color: #000;
   margin: 5px;
   background-color: white;
   cursor: pointer;
 }
+
 .containe {
   display: flex;
   flex-wrap: wrap;
 }
+
 .try {
   background-color: #943266;
 }
+
 .side-ba {
   width: 12%;
   height: 100vh;
@@ -62,6 +73,7 @@ li:hover {
   background-color: rgb(21, 21, 21);
   text-align: center;
 }
+
 .mai {
   position: relative;
   width: 88%;
@@ -70,6 +82,7 @@ li:hover {
   background-color: rgb(248, 244, 244);
   text-align: center;
 }
+
 .nav {
   position: relative;
   display: flex;
@@ -77,16 +90,19 @@ li:hover {
   width: 100%;
   height: 20%;
   background-color: rgb(32, 86, 130);
-  box-shadow: 0px 3px 3px 0px rgba(68, 14, 14, 0.2);
+  box-shadow: 0 3px 3px 0px rgba(68, 14, 14, 0.2);
 }
+
 .searc {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .searc input[type="text"] {
   width: 30%;
 }
+
 .searc button,
 input {
   width: 40px;
@@ -104,14 +120,17 @@ input {
   padding: 10px;
   color: rgb(118, 117, 117);
 }
+
 .searc button img {
   width: 35px;
   height: 35px;
   cursor: pointer;
 }
+
 .searc input {
   border: none;
 }
+
 .cardss {
   display: flex;
   flex-wrap: wrap;
@@ -120,6 +139,7 @@ input {
   background-color: rgb(248, 244, 244);
   color: orange;
 }
+
 .car {
   display: flex;
   align-items: center;
@@ -133,9 +153,11 @@ input {
   border-radius: 10px;
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
 }
+
 .car:hover {
   background-color: black;
 }
+
 .mai2 {
   width: 96%;
   height: 50%;
@@ -148,31 +170,36 @@ input {
 }
 
 .btn {
-  background: #943266 !important;
-  color: white !important;
-  padding: 5px 15px !important;
+  background: #943266;
+  color: white;
+  padding: 5px 15px;
   border-radius: 5px;
   text-align: center;
 }
+
 .btn:hover {
-  background: white !important;
-  color: #943266 !important;
+  background: white;
+  color: #943266;
   border: 0.3px solid;
 }
+
 .btn:first-child,
 .btn:first-child:hover,
 :not(.btn-check) + .btn:hover {
   background-color: black;
   border-color: #943266;
 }
+
 table {
   margin: 100px 0 50px 0;
 }
+
 td {
   text-align: center;
   border-bottom: 1px solid rgb(204, 201, 201);
   padding: 2px;
 }
+
 .table-titl {
   width: 100%;
   position: absolute;

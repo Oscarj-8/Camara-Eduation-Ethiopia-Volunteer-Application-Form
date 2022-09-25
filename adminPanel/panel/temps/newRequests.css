@@ -26,14 +26,15 @@ body {
 .table tr:nth-child(even) {
   background-color: #e7e6e6;
 }
+
 .table tr:hover {
   background-color: rgb(150, 147, 147);
 }
+
 .table th {
   color: white;
   background: #475783;
   padding: 12px;
-  /* height: 17px; */
   text-align: center;
 }
 
