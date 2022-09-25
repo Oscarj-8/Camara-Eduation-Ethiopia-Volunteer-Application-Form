@@ -1,5 +1,5 @@
-var ctx2 = document.getElementById("lineChart").getContext("2d");
-var myChart2 = new Chart(ctx2, {
+let ctx2 = document.getElementById("lineChart").getContext("2d");
+let myChart2 = new Chart(ctx2, {
   type: "line",
   data: {
     labels: ["werner", "ziyech", "pulisic", "sterling"],
