@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/da8e7b61e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="../panel/temps/newRequests.css" />
+    <link rel="stylesheet" href="panel.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <h2>Admin panel</h2>
+        </div>
+        <div class="search">
+          <input type="text" id="search" placeholder="search here" />
+          <label for="search"> <i class="fas fa-search"></i></label>
+        </div>
+        <div class="user">
+          <i class="fa-solid fa-user-tie fa-2xl"></i>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="nav-links">
+          <li>
+            <a href="panel.htm">
+              <i class="fa-solid fa-gauge"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-users"></i>
+              <div><span>Volunteers</span></div>
+              <i class="fa-solid fa-caret-down arrow"></i>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#" onclick='loadHtml("main", "newRequests.htm")'
+                  >New Requests</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick='loadHtml("main", "currentVolunteers.htm")'
+                  >Current Volunteers</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick='loadHtml("main", "newRequests.htm")'
+                  >Last Term Arrivals</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick='loadHtml("main", "newRequests.htm")'>
+                  Total Volunteers
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="main" id="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="number">17</div>
+              <div class="card-name"><span>Current Volunteers</span></div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">22</div>
+              <div class="card-name">Last Term Arrivals</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">217</div>
+              <div class="card-name">Total Volunteers</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart">
+            <h2>Last term arrivals</h2>
+            <canvas id="bar"></canvas>
+          </div>
+          <div class="chart" id="doughnut-chart">
+            <h2>Another information</h2>
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+
+      console.log(arrow);
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement;
+          console.log(arrowParent);
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js "></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="htmlload.js"></script>
+  </body>
+</html>
