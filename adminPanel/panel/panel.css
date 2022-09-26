@@ -136,7 +136,7 @@
 }
 
 .sidebar .sub-menu li a {
-  padding: 70px 0 10px 0px;
+  padding: 70px 0 10px 0;
   margin: -25px 20px;
   font-size: 13px;
 }
@@ -283,7 +283,7 @@
   }
 
   #doughnut {
-    padding: 0px;
+    padding: 0;
   }
 
   .user {
